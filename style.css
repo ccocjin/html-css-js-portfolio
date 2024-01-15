@@ -337,15 +337,6 @@ section {
   justify-content: space-around;
 }
 
-.article-container2 {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
 article {
   display: flex;
   width: 8rem;
@@ -353,7 +344,7 @@ article {
   gap: 0.5rem;
 }
 
-.article2 {
+.article-cert {
   display: flex;
   width: 25rem;
   justify-content: space-around;
