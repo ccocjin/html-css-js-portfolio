@@ -189,6 +189,52 @@ section {
   margin-bottom: 1rem;
 }
 
+.section_text .dynamic_text {
+  font-size: 1.75rem;
+  text-align: center;
+  height: 39px;
+  line-height: 39.3px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.dynamic_text li {
+  color: #fc6d6d;
+  list-style: none;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 7.5s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -118px;
+  }
+}
+
+.dynamic_text li span {
+  position: relative;
+}
+
+.dynamic_text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 2.5s steps(35) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 20px;
+  }
+}
+
 .title {
   font-size: 3rem;
   text-align: center;
