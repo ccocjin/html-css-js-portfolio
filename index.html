@@ -43,12 +43,9 @@
       <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Chris Cocjin</h1>
-
-        <ul class="dynamic_text">
-          <li><span>Information Technology Student</span></li>
-          <li><span>Specialized in IT Automation</span></li>
-          <li><span>and a life-long learner.</span></li>
-        </ul>
+        <h1 class="dynamico">
+          <span class="auto-type"></span>
+        </h1>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -78,6 +75,18 @@
           />
         </div>
       </div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed(".auto-type", {
+    strings: ["Information Technology Student", "Specialized in IT Automation", "and a life-long learner."],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop : true
+  });
+</script>
+
+      </script>
     </section>
     <section id="about">
       <p class="section_text_p1">Get to Know More</p>
